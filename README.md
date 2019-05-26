@@ -3,10 +3,10 @@ I make a mistake to forget the avgpool in se model, now I have re-trained the mb
 
 You should use torch.load to load the model.
 
-···
+```
 model = torch.load("mbv3_large.old.pth.tar", map_location='cpu')
 weight = model["state_dict"]
-···
+```
 
 This is a PyTorch implementation of MobileNetV3 architecture as described in the paper [Searching for MobileNetV3](https://arxiv.org/pdf/1905.02244.pdf).
 
